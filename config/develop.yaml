@@ -3,7 +3,7 @@ http_port: 3000
 # 日志配置
 log_level: debug # 日志级别 info, debug, warn, error, trace, off
 save_log: false # 是否保存日志
-log_file: logs/radar_detector.log # 日志文件
+log_file: logs/template_detector.log # 日志文件
 
 # redis配置
 main_redis:
@@ -16,9 +16,9 @@ main_redis:
 postgres:
   ip: 127.0.0.1
   port: 5432
-  db: radar_db
-  admin: radar
-  password: radar123
+  db: template_db
+  admin: template
+  password: template123
   min_connections: 1
   max_connections: 10
   sqlx_logging: true

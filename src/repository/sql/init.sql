@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS public.tb_role (
     "delete_flag" SMALLINT NOT NULL DEFAULT 0
 );
 
-ALTER TABLE public.tb_role OWNER TO "radar";
+ALTER TABLE public.tb_role OWNER TO "template";
 
 CREATE TRIGGER "update_tb_role_timestamp" BEFORE UPDATE ON public.tb_role
 FOR EACH ROW
@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS public.tb_admin (
 );
 
 ALTER TABLE public.tb_admin 
-  OWNER TO "radar";
+  OWNER TO "template";
 
 CREATE TRIGGER "update_tb_admin_timestamp" BEFORE UPDATE ON public.tb_admin
 FOR EACH ROW
@@ -90,7 +90,7 @@ CREATE TABLE IF NOT EXISTS public.tb_project (
 );
 
 ALTER TABLE public.tb_project 
-  OWNER TO "radar";
+  OWNER TO "template";
 
 CREATE TRIGGER "update_tb_project_timestamp" BEFORE UPDATE ON public.tb_project
 FOR EACH ROW
@@ -129,7 +129,7 @@ CREATE TABLE IF NOT EXISTS public.tb_device_model (
 );
 
 ALTER TABLE public.tb_device_model 
-  OWNER TO "radar";
+  OWNER TO "template";
 
 CREATE TRIGGER "update_tb_device_model_timestamp" BEFORE UPDATE ON public.tb_device_model
 FOR EACH ROW
@@ -168,7 +168,7 @@ CREATE TABLE IF NOT EXISTS public.tb_device (
 );
 
 ALTER TABLE public.tb_device 
-  OWNER TO "radar";
+  OWNER TO "template";
 
 CREATE TRIGGER "update_tb_device_timestamp" BEFORE UPDATE ON public.tb_device
 FOR EACH ROW
@@ -207,7 +207,7 @@ CREATE TABLE IF NOT EXISTS public.tb_device_record (
 );
 
 ALTER TABLE public.tb_device_record 
-  OWNER TO "radar";
+  OWNER TO "template";
 
 CREATE TRIGGER "update_tb_device_record_timestamp" BEFORE UPDATE ON public.tb_device_record
 FOR EACH ROW
@@ -234,7 +234,7 @@ CREATE TABLE IF NOT EXISTS public.tb_check_point (
 );
 
 ALTER TABLE public.tb_check_point 
-  OWNER TO "radar";
+  OWNER TO "template";
 
 CREATE TRIGGER "update_tb_check_point_timestamp" BEFORE UPDATE ON public.tb_check_point
 FOR EACH ROW
@@ -260,7 +260,7 @@ CREATE TABLE IF NOT EXISTS public.tb_device_check_point (
 );
 
 ALTER TABLE public.tb_device_check_point 
-  OWNER TO "radar";
+  OWNER TO "template";
 
 CREATE TRIGGER "update_tb_device_check_point_timestamp" BEFORE UPDATE ON public.tb_device_check_point
 FOR EACH ROW
@@ -285,7 +285,7 @@ CREATE TABLE IF NOT EXISTS public.tb_check_content (
 );
 
 ALTER TABLE public.tb_check_content 
-  OWNER TO "radar";
+  OWNER TO "template";
 
 CREATE TRIGGER "update_tb_check_content_timestamp" BEFORE UPDATE ON public.tb_check_content
 FOR EACH ROW
@@ -316,7 +316,7 @@ CREATE TABLE IF NOT EXISTS public.tb_project_check_content (
 );
 
 ALTER TABLE public.tb_project_check_content 
-  OWNER TO "radar";
+  OWNER TO "template";
 
 CREATE TRIGGER "update_tb_project_check_content_timestamp" BEFORE UPDATE ON public.tb_project_check_content
 FOR EACH ROW
@@ -342,7 +342,7 @@ CREATE TABLE IF NOT EXISTS public.tb_alarm_type (
 );
 
 ALTER TABLE public.tb_alarm_type 
-  OWNER TO "radar";
+  OWNER TO "template";
 
 CREATE TRIGGER "update_tb_alarm_type_timestamp" BEFORE UPDATE ON public.tb_alarm_type
 FOR EACH ROW
