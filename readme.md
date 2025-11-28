@@ -106,16 +106,7 @@ openssl genpkey -algorithm RSA -out config/key/jwt-private-key.pem -pkeyopt rsa_
 openssl rsa -pubout -in config/key/jwt-private-key.pem -out config/key/jwt-public-key.pem
 ```
 
-5. **初始化数据库**
-```bash
-# 创建数据库（如果尚未创建）
-createdb template_db
-
-# 运行数据库迁移（如果有）
-# sea-orm-cli migrate up
-```
-
-6. **生成数据库实体**
+5. **生成数据库实体**
 ```bash
 # 设置数据库连接环境变量
 export DATABASE_URL=postgres://template:template123@localhost/template_db
@@ -124,7 +115,7 @@ export DATABASE_URL=postgres://template:template123@localhost/template_db
 sea-orm-cli generate entity --with-serde both --model-extra-attributes 'serde(rename_all = "camelCase")' -o ./src/repository/entity
 ```
 
-7. **运行项目**
+6. **运行项目**
 ```bash
 cargo run
 ```
